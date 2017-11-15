@@ -19,3 +19,9 @@ points to be coplanar with them.
     z2 = s.point((0.0, 1.0, 0.0))
     z3 = s.point((1.0, 1.0, 0.0))
     s.add(PlaneConstraint(s.all_points()))
+
+## Shortcomings
+
+Some constraints such as `AngleConstraint` should allow you to specify
+additional parameters (e.g., `minAngle` and `maxAngle`) but this is not
+exposed by the SWIG interface.
