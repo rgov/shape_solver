@@ -1,0 +1,6 @@
+ShapeOp.0.1.0/
+build/
+_shapeopPython.so
+shapeopPython.py
+*.pyc
+.DS_Store
