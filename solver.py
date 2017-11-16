@@ -92,11 +92,11 @@ class Constraint(object):
     if len(args) < self.__argc__[0]:
       raise ValueError(
         'Too few arguments for %s constraint (expected %d, got %d)' \
-        % (self.__cname, self.__argc__[0], len(args)))
+        % (self.__cname__, self.__argc__[0], len(args)))
     if self.__argc__[1] is not None and len(args) > self.__argc__[1]:
       raise ValueError(
         'Too many arguments for %s constraint (expected %d, got %d)' \
-        % (self.__cname, self.__argc__[1], len(args)))
+        % (self.__cname__, self.__argc__[1], len(args)))
     self.args = list(args)
 
 # FIXME: What about additional arguments?
