@@ -1,4 +1,15 @@
 #!/usr/bin/env python
+'''
+This example tries to replicate the example found in
+libShapeOp/bindings/python/runme.py.
+
+Expected output:
+  a = (0.0, 0.0, 0.0)
+  b = (0.0, 0.0, 1.0)
+  c = (0.0, 1.0, 0.0)
+  d = (0.0, 1.0, 1.0)
+'''
+import os, sys; sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from solver import *
 
